@@ -86,7 +86,7 @@ def countLetters(wordList):
     return len([j for i in wordList for j in i])
 
 
-class TestSequenceFunctions(unittest.TestCase):
+class TestProblem17(unittest.TestCase):
 
     def testTeenAndBelow(self):
         self.assertEqual(numberToWord(15), ['fifteen'])
