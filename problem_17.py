@@ -52,6 +52,7 @@ THOUSAND = 'thousand'
 NUMBER_TEN = 10
 NUMBER_HUNRED = 100
 NUMBER_THOUSAND = 1000
+WORD_AND = 'and'
 
 
 def numberToWord(number):
@@ -75,7 +76,7 @@ def numberToWord(number):
     try:
         parts = [p for p in parts if p]
         if len(parts) > parts.index(HUNDRED) + 1:
-            parts.append('and')
+            parts.append(WORD_AND)
     except ValueError:
         pass
 
