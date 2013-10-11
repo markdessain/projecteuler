@@ -50,7 +50,7 @@ TENS = [
 HUNDRED = 'hundred'
 THOUSAND = 'thousand'
 NUMBER_TEN = 10
-NUMBER_HUNRED = 100
+NUMBER_HUNDRED = 100
 NUMBER_THOUSAND = 1000
 WORD_AND = 'and'
 
@@ -63,8 +63,8 @@ def numberToWord(number):
     number = number % NUMBER_THOUSAND
 
     parts.append(BELOW_20[number / NUMBER_HUNRED])
-    parts.append(HUNDRED if number / NUMBER_HUNRED else None)
-    number = number % NUMBER_HUNRED
+    parts.append(HUNDRED if number / NUMBER_HUNDRED else None)
+    number = number % NUMBER_HUNDRED
 
     if number < len(BELOW_20):
         parts.append(BELOW_20[number])
